@@ -1,0 +1,21 @@
+package com.inheritence;
+
+public class Child extends Parent{
+	
+	//using extend keyword one class can inherit the properties of class which we've extend.
+	
+	
+	
+	public void childMethod() {
+		super.number=10;
+		//in child class we can access the properties of parent class using super keyword.
+		
+		System.out.println("Child Method");
+	}
+
+	//@Overridden method
+	@Override
+	public void parentMethod() {
+		System.out.println("Overriden Parent Method");
+	}
+}
