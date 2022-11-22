@@ -1,0 +1,21 @@
+package com.ImageProcessingMultithreading;
+
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException{
+		
+		MyImage myImageThread = new MyImage();
+		MyImage2 myImageThreadTwo = new MyImage2();
+		
+		Thread thread1 = new Thread(myImageThread);
+		Thread thread2 = new Thread(myImageThreadTwo);
+		
+		
+		thread1.start();
+		
+		thread2.start();
+    	
+	}
+}

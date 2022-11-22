@@ -1,0 +1,11 @@
+package com.masai;
+
+public class Parent {
+	
+	int number;
+	
+	public void parentMethod() {
+		System.out.println("Parent Method");
+	}
+
+}

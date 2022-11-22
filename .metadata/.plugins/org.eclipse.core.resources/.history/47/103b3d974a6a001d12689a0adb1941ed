@@ -1,0 +1,19 @@
+package com.masai;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Parent parent = new Parent();
+		parent.parentMethod();
+		//this will call the method of parent class.
+		
+		
+		Parent parentchild = new Child();
+		parent.parentMethod();
+		//here Parent class reference variable holds a object of child class hence
+		//this will call the overriden method of parent class.
+		
+	}
+
+}

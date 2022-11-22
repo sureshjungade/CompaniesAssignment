@@ -1,0 +1,16 @@
+package com.exception;
+
+public class Exception {
+	
+	int score;
+	
+	String name;
+	
+	public void calculateScore(int score, String name) {
+		if(score<0) {
+			throw new scoreshouldnotnegatvie("Score should not be in negative");
+		}
+		System.out.println(name + "'s " + " " +score);
+	}
+
+}

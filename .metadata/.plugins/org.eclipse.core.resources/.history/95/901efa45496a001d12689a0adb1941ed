@@ -1,0 +1,10 @@
+package com.masai;
+
+public class Parent {
+	
+	
+	public void parentMetod() {
+		System.out.println("Parent Metod");
+	}
+
+}

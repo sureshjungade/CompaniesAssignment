@@ -1,0 +1,43 @@
+package com.exception;
+
+public class Exception {
+	
+	int score;
+	
+	String name;
+	
+	public void calculateScore(int score, String name) throws scoreshouldnotnegatvie{
+		if(score<0) {
+			throw new scoreshouldnotnegatvie("Score should not be in negative");
+		}
+		System.out.println(name + "'s score is " + " " +score);
+	}
+	
+	
+	public void divideScoreByZero(int score){
+		
+		try{
+			int divide = score/0;
+			
+		}catch (ArithmeticException e) {
+			System.out.println("exception is handeled" + " " +e.getMessage());
+		}
+		
+		//.out.println(name + "'s score is " + " " +score);
+	}
+	
+	public void printCricketerName(String name){
+		
+		
+		try{
+			System.out.println(name.toString());
+			
+		}catch (NullPointerException e) {
+			System.out.println("exception is handeled" + " "+e.getMessage());
+		}catch (Exception e) {
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.exception;
+
+public class checkedexception extends RuntimeException {
+	
+	public checkedexception(String message) {
+		super(message);
+	}
+
+}
